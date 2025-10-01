@@ -51,8 +51,8 @@ pip install flash-attn==2.7.2.post1 --no-build-isolation
 ### Downloading datasets
 Use the instructions listed on the following links for downloading datasets and make sure to structure them as mentioned.
 
-- LLaVA Mix-665K instruction-tuning dataset — [here](https://github.com/haotian-liu/LLaVA?tab=readme-ov-file#visual-instruction-tuning)
-- Vision FLAN dataset — [here](https://vision-flan.github.io/#download)
+- LLaVA Mix-665K instruction-tuning dataset - [here](https://github.com/haotian-liu/LLaVA?tab=readme-ov-file#visual-instruction-tuning)
+- Vision FLAN dataset - [here](https://vision-flan.github.io/#download)
 
 
 ### Runnning XMAS
