@@ -90,3 +90,17 @@ bash scripts/v1_5/finetune_lora.sh
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## BibTex
+```
+@misc{naharas2025dataselectionfinetuningvision,
+      title={Data Selection for Fine-tuning Vision Language Models via Cross Modal Alignment Trajectories}, 
+      author={Nilay Naharas and Dang Nguyen and Nesihan Bulut and Mohammadhossein Bateni and Vahab Mirrokni and Baharan Mirzasoleiman},
+      year={2025},
+      eprint={2510.01454},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2510.01454}, 
+}
+```
+
