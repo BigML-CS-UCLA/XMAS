@@ -9,6 +9,11 @@ Data-efficient learning aims to eliminate redundancy in large training datasets 
 Notably, none of existing methods can outperform random selection at different subset sizes.
 In this work, we propose the first principled method for data-efficient instruction tuning of LVLMs. We prove that examples with similar cross-modal attention matrices during instruction tuning have similar gradients. Thus, they influence model parameters in a similar manner and convey the same information to the model during training. Building on this insight, we propose XMAS, which clusters examples based on the trajectories of the top singular values of their attention matrices obtained from fine-tuning a small proxy LVLM. By sampling a balanced subset from these clusters, XMAS effectively removes redundancy in large-scale LVLM training data. Extensive experiments show that XMAS can discard 50\% of the LLaVA-665k dataset and 85\% of the Vision-Flan dataset while fully preserving performance of LLaVA-1.5-7B %to match the accuracy of full-data training on 10 downstream benchmarks and speeding up its training by 1.2$\times$. This is 30\% more data reduction  compared to the best baseline for LLaVA-665k.
 
+[Project Page](https://bigml-cs-ucla.github.io/XMAS-project-page/)
+
+[Paper](https://github.com/BigML-CS-UCLA/XMAS/tree/main)
+
+
 ![XMAS](assets/xmas.png)
 <p>
 XMAS employs a small proxy VLM to find alignment trajectory for examples in the fine-tuning data. Examples with similar alignment trajectory have similar gradients during instruction tuning. Then, it clusters the alignment trajectories and sample a balanced subset of examples with more stable trajectories from the clusters.
